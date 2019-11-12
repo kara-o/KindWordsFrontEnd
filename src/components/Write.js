@@ -90,7 +90,7 @@ class Write extends Component {
               </span>
             </div>
           </div>
-          <div class='one column row'>
+          <div className='one column row'>
             <div className='column'>
               <Button
                 onClick={
