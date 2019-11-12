@@ -41,10 +41,15 @@ class Icon extends Component {
   }
 
   render() {
+    const { currentIcon } = this.state
     return (
       <>
-        <Button className='circular ui icon button' onClick={this.handleClick}>
-          <span role='img'>{this.state.currentIcon}</span>
+        <Button
+          className='circular ui icon button'
+          onClick={this.handleClick}
+          value={currentIcon}
+        >
+          <span role='img'>{currentIcon}</span>
         </Button>
         {this.state.isChange ? this.renderGroup() : null}
       </>

@@ -6,7 +6,8 @@ const LETTERS_URL = 'http://localhost:3000/letters'
 
 class Write extends Component {
   state = {
-    content: ''
+    content: '',
+    selectedIcon: ''
   }
 
   handleTextChange = e => {
@@ -16,7 +17,7 @@ class Write extends Component {
   }
 
   handleSubmitLetter = () => {
-    const { handleCloseClick, accountId, icon } = this.props
+    const { handleCloseClick, accountId } = this.props
     fetch(LETTERS_URL, {
       method: 'POST',
       headers: {
@@ -26,9 +27,11 @@ class Write extends Component {
       body: JSON.stringify({
         content: this.state.content,
         account_id: accountId,
-        icon: icon
+        icon: this.state.selectedIcon
       })
     })
+      .then(res => res.json())
+      .then(console.log)
 
     handleCloseClick()
   }
@@ -38,7 +41,6 @@ class Write extends Component {
       letter,
       handleCloseClick,
       accountId,
-      icon,
       incrementResponses
     } = this.props
     const letterId = letter.id
@@ -53,13 +55,19 @@ class Write extends Component {
         content: this.state.content,
         letter_id: letterId,
         account_id: accountId,
-        icon: icon
+        icon: this.state.selectedIcon
       })
     })
       .then(res => res.json())
       .then(incrementResponses(letter))
 
     handleCloseClick()
+  }
+
+  setIcon = icon => {
+    this.setState({
+      selectedIcon: icon
+    })
   }
 
   render() {
@@ -86,7 +94,7 @@ class Write extends Component {
                 </div>
               </div>
               <span className='right floated icon'>
-                <Icon icon={icon} />
+                <Icon icon={icon} setIcon={this.setIcon} />
               </span>
             </div>
           </div>
