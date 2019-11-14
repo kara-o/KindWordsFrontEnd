@@ -14,7 +14,7 @@ const Read = ({ letter, setDesk, isWrite }) => {
     <div className='six wide centered column'>
       <div className='ui fluid card'>
         <div className='content'>
-          <p>{letter.content}</p>
+          <p className='reply'>{letter.content}</p>
           <span className='right floated icon'>
             <Icon icon={letter.icon} />
           </span>
@@ -26,7 +26,7 @@ const Read = ({ letter, setDesk, isWrite }) => {
             onClick={() => setDesk(true, true, false)}
             className='ui right floated button primary'
           >
-            Respond to Letter
+            Respond
           </Button>
           <Button
             onClick={() => setDesk()}

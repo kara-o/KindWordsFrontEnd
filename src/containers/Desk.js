@@ -36,7 +36,7 @@ class Desk extends Component {
       .then(resp => resp.json())
       .then(letters => {
         this.setState({ letterStack: letters })
-        this.startFairy()
+        setTimeout(this.startFairy, 1000)
       })
   }
 
@@ -192,7 +192,7 @@ class Desk extends Component {
       isJournal: journal
     })
 
-    if (!write && !read && !journal) this.startFairy()
+    if (!write && !read && !journal) setTimeout(this.startFairy, 1000)
   }
 
   isEmptyDesk = () => {
@@ -205,7 +205,6 @@ class Desk extends Component {
   }
 
   render() {
-    console.log(bamboo)
     const { fairy, isWrite, isRead, isJournal } = this.state
     const { handleSignOut } = this.props
 

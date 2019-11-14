@@ -78,8 +78,8 @@ class Write extends Component {
                     onChange={this.handleTextChange}
                     placeholder={
                       isRead
-                        ? 'Write your response here! ✎'
-                        : 'Write your letter here! ✎'
+                        ? 'Send some kind words back here!'
+                        : 'Something troubling you?  Write it out here...'
                     }
                     value={this.state.content}
                   ></TextArea>
