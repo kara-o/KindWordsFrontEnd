@@ -155,9 +155,7 @@ class LoginScreen extends Component {
               <br />
               {this.renderPasswordInput()}
             </div>
-            <div className='extra content'>
-              {this.renderLoginAndCreateButtons()}
-            </div>
+            <div className='extra'>{this.renderLoginAndCreateButtons()}</div>
           </div>
         </div>
       </>

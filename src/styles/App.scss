@@ -99,7 +99,7 @@ textarea {
 }
 
 div.content {
-  background-image: url('/static/media/vintage-paper.7ecce0ee.jpg')!important;
+  background-image: url('/static/media/bamboo-paper.1e38f77e.jpg')!important;
   background-size: cover;
 }
 
@@ -110,5 +110,9 @@ div.content {
 
 .initial {
   font-family: 'Shadows Into Light', cursive;
+}
+
+.sidebyside {
+  max-width: 290px;
 }
 

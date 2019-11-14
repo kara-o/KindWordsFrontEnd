@@ -143,7 +143,7 @@ class Journal extends Component {
           </div>
         </div>
         <div className='row three cards'>
-          <div className='ui item'>
+          <div className='ui sidebyside item'>
             <div className='ui card'>
               <h3>Entries</h3>
             </div>
@@ -153,7 +153,7 @@ class Journal extends Component {
               forward={this.lettersForward}
             />
           </div>
-          <div className='ui item'>
+          <div className='ui sidebyside item'>
             <div className='ui card'>
               <h3>Response(s)</h3>
             </div>

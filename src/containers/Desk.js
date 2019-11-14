@@ -7,6 +7,7 @@ import Journal from '../containers/Journal'
 import CreateResponse from '../components/CreateResponse'
 import anime from 'animejs'
 import BGImage from '../assets/images/forest-bg.png'
+import bamboo from '../assets/images/bamboo-paper.jpg'
 
 const LETTERS_URL = 'http://localhost:3000/letters'
 const SEENS_URL = 'http://localhost:3000/seens'
@@ -204,6 +205,7 @@ class Desk extends Component {
   }
 
   render() {
+    console.log(bamboo)
     const { fairy, isWrite, isRead, isJournal } = this.state
     const { handleSignOut } = this.props
 

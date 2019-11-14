@@ -12,13 +12,13 @@ const CreateResponse = ({
   return (
     <>
       <div className='row three cards'>
-        <div className='ui item'>
+        <div className='ui sidebyside item'>
           <div className='ui card'>
             <h3>Fairy Message</h3>
           </div>
           <Read letter={letter} isWrite={true} icon={icon} />
         </div>
-        <div className='ui item'>
+        <div className='ui sidebyside item'>
           <div className='ui card'>
             <h3>Response</h3>
           </div>
