@@ -11,8 +11,8 @@ class Fairy extends Component {
   animate = () => {
     const { throwFairy, start } = this.props
 
-    let randomX = () => Math.floor(Math.random() * 100) + 5
-    let randomY = () => Math.floor(Math.random() * 1000) + 5
+    let randomX = () => Math.floor(Math.random() * 50) + 5
+    let randomY = () => Math.floor(Math.random() * 500) + 5
     let randomXMovement = () => {
       return anime.random(-`${randomX()}`, `${randomX()}`) + 'rem'
     }
@@ -21,16 +21,18 @@ class Fairy extends Component {
       translateY: [
         { value: randomY() * -1 },
         { value: randomY() * -1 },
-        { value: randomY() * -1 }
-      ]
+        { value: randomY() * 1 },
+        { value: randomY() * -1 },
+      ],
     }
 
     let topY = {
       translateY: [
         { value: randomY() },
         { value: randomY() },
-        { value: randomY() }
-      ]
+        { value: randomY() * -1 },
+        { value: randomY() },
+      ],
     }
 
     const baseAnime = {
@@ -39,12 +41,12 @@ class Fairy extends Component {
         { value: randomXMovement() },
         { value: randomXMovement() },
         { value: randomXMovement() },
-        { value: randomXMovement() }
+        { value: randomXMovement() },
       ],
       opacity: [{ value: 1 }, { value: 0 }],
       easing: 'easeOutSine',
       duration: 15000,
-      complete: throwFairy
+      complete: throwFairy,
     }
 
     const updatedAnime = Object.assign(
@@ -57,10 +59,17 @@ class Fairy extends Component {
 
   render() {
     const { handleClick, fairy, start } = this.props
+    // const random = Math.floor(Math.random() * 1000)
+    // const random2 = Math.floor(Math.random() * 1000)
+    // const fairyStyle = {
+    //   top: random + 'px !important',
+    //   left: random2 + 'px !important',
+    // }
     return (
       <Button
         className={`star ui button ${start}`}
         onClick={e => handleClick(e, fairy)}
+        // style={fairyStyle}
       >
         <img id='glowImg' src={fairyImg} alt='glowing light' />
       </Button>

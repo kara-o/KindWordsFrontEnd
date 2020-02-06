@@ -8,12 +8,12 @@ const LETTERS_URL = 'http://localhost:3000/letters'
 
 class Write extends Component {
   state = {
-    content: ''
+    content: '',
   }
 
   handleTextChange = e => {
     this.setState({
-      content: e.target.value
+      content: e.target.value,
     })
   }
 
@@ -23,13 +23,13 @@ class Write extends Component {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Accept: 'application/json'
+        Accept: 'application/json',
       },
       body: JSON.stringify({
         content: this.state.content,
         account_id: accountId,
-        icon: icon
-      })
+        icon: icon,
+      }),
     })
       .then(res => res.json())
       .then(letter => this.props.postSeen(letter.id))
@@ -45,14 +45,14 @@ class Write extends Component {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Accept: 'application/json'
+        Accept: 'application/json',
       },
       body: JSON.stringify({
         content: this.state.content,
         letter_id: letterId,
         account_id: accountId,
-        icon: icon
-      })
+        icon: icon,
+      }),
     })
       .then(res => res.json())
       .then(incrementResponses(letter))
@@ -61,7 +61,6 @@ class Write extends Component {
   }
 
   render() {
-    console.log(paperBackground)
     const { isRead, icon, setDesk } = this.props
 
     return (

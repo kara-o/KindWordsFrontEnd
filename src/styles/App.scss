@@ -2,11 +2,11 @@ body {
   background-image: url('/static/media/forest-bg.102d57b1.png');
   background-size: cover;
   background-position: center center;
-  font-family: "Roboto";
+  font-family: 'Roboto';
 }
 
 textarea {
-  background: transparent!important;
+  background: transparent !important;
 }
 
 .App {
@@ -41,12 +41,12 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden
+  overflow: hidden;
 }
 .fill img {
   flex-shrink: 0;
   min-width: 100%;
-  min-height: 100%
+  min-height: 100%;
 }
 
 .img {
@@ -70,14 +70,14 @@ textarea {
 
 .signature {
   position: absolute;
-  right:    14px;
-  bottom:   8px;
+  right: 14px;
+  bottom: 8px;
 }
 
 .star {
-  background: none!important;
+  background: none !important;
   border: none;
-  padding: 0!important;
+  padding: 0 !important;
   position: absolute;
 }
 
@@ -99,14 +99,14 @@ textarea {
 }
 
 div.content {
-  background-image: url('/static/media/bamboo-paper.1e38f77e.jpg')!important;
+  background-image: url('/static/media/bamboo-paper.1e38f77e.jpg') !important;
   background-size: cover;
 }
 
 #writetext {
   border: none;
   resize: none;
-} 
+}
 
 .initial {
   font-family: 'Shadows Into Light', cursive;
@@ -120,4 +120,3 @@ div.content {
 .sidebyside {
   max-width: 290px;
 }
-
