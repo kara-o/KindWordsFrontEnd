@@ -20,31 +20,31 @@ In your terminal navigate to the directory where you want to save the front end 
 ### Screenshots
 
 <p align="center">
-<img src='./readme_images/login'>
+<img src='./readme_images/login.png'>
 <br>
 <em>Login</em>
 </p>
 
 <p align="center">
-<img src='./readme_images/home_page'>
+<img src='./readme_images/home_page.png'>
 <br>
 <em>Home screen</em>
 </p>
 
 <p align="center">
-<img src='./readme_images/opened_letter'>
+<img src='./readme_images/opened_letter.png'>
 <br>
 <em>A view of the opened letter after you click on a fairy</em>
 </p>
 
 <p align="center">
-<img src='./readme_images/responding'>
+<img src='./readme_images/responding.png'>
 <br>
 <em>Responding to a letter</em>
 </p>
 
 <p align="center">
-<img src='./readme_images/journal'>
+<img src='./readme_images/journal.png'>
 <br>
 <em>Review all of your posted letters and their responses from others</em>
 </p>
