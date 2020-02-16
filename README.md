@@ -28,7 +28,7 @@ In your terminal navigate to the directory where you want to save the front end 
 <p align="center">
 <img src='./readme_images/home_page.png'>
 <br>
-<em>Home screen</em>
+<em>Home screen with arrow pointing to fairy</em>
 </p>
 
 <p align="center">
