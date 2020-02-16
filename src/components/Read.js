@@ -5,8 +5,8 @@ import Icon from './Icon'
 const Read = ({ letter, setDesk, isWrite }) => {
   if (!letter) {
     letter = {
-      content: 'I love you, you got this! <3',
-      icon: 'J'
+      content: 'I believe in you, you got this! <3',
+      icon: 'J',
     }
   }
 
