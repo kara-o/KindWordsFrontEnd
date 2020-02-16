@@ -6,6 +6,11 @@ A simple app that is meant to spread positivity by sharing some kind words.
 
 This is our Module Four group project for Flatiron. It is a single page web application built with a ReactJS front end, and a [Rails API back end](https://github.com/kara-o/KindWordsBackEnd).
 
+### Additional Contributors
+
+- [Justin](https://github.com/justinamaple)
+- [Brian](https://github.com/brianly27)
+
 ### How to Run
 
 Please install our [Rails back end](https://github.com/kara-o/KindWordsBackEnd) as well.
@@ -16,11 +21,6 @@ In your terminal navigate to the directory where you want to save the front end 
 1. `cd KindWordsFrontEnd`
 1. `npm install`
 1. `npm start`
-
-### Additional Contributors
-
-- [Justin](https://github.com/justinamaple)
-- [Brian](https://github.com/brianly27)
 
 ### Screenshots
 
