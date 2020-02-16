@@ -17,6 +17,11 @@ In your terminal navigate to the directory where you want to save the front end 
 1. `npm install`
 1. `npm start`
 
+### Additional Contributors
+
+- [Justin](https://github.com/justinamaple)
+- [Brian](https://github.com/brianly27)
+
 ### Screenshots
 
 <p align="center">
@@ -47,8 +52,3 @@ In your terminal navigate to the directory where you want to save the front end 
 <br>
 <em>Review all of your posted letters and their responses from others</em>
 </p>
-
-### Additional Contributors
-
-- [Justin](https://github.com/justinamaple)
-- [Brian](https://github.com/brianly27)
